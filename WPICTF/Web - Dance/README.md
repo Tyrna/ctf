@@ -23,6 +23,7 @@ Looking into the header I see that some Cookies were set:
 ![](./Hex_Dance.png)
 
 **flag=e1ksn2ssktocg2aev3wduqaoj24fm19xvgmommsoh3suheaug2wxhdusif5wigw9mzx=**
+
 **Julius C.="got good dance moves."**
 
 Wow. This seems too easy to be true. That *flag* seems like it is a base64 encoded string, so I tried decoding it right away. To my somehow enjoyment it didnt work, so I assumed there is a layer on top of it. 
