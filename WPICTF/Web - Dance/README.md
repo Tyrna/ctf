@@ -32,11 +32,7 @@ The other cookie seem like a clue. I noticed right away that it is probably talk
 
 The question at this point was, it was shifted, but *by how much?*
 
-After a while looking for anything within the site, I noticed that the link given had a time where it started at **9 seconds**. I took that as the sign I needed if this was going to work, and used normal Caesar Cipher to try and shift it back to the original and then decode it with base64.
-
-To my surprise (as I thought I already had it done), it did not work. 
-
-However, after a while reading about Caesar Cipher, I found out there is also ROT13 that is a special case of Caesar Cipher with a specific shift value. So I shifted the string using ROT13, n = 9, and when I decoded it with base64, alas, got the flag:
+After a while looking for anything within the site, I noticed that the link given had a time where it started at **9 seconds**. I took that as the sign I needed if this was going to work, and used Caesar Cipher to try and shift it back to the original and then decode it with base64.
 
 ![](./Decode_Dance.png)
 
