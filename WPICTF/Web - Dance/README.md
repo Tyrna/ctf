@@ -22,7 +22,7 @@ Looking into the header I see that some Cookies were set:
 
 ![](./Hex_Dance.png)
 
-**flag=e1ksn2ssktocg2aev3wduqaoj24fm19xvgmommsoh3suheaug2wxhdusif5wigw9mzx= **
+**flag=e1ksn2ssktocg2aev3wduqaoj24fm19xvgmommsoh3suheaug2wxhdusif5wigw9mzx=**
 **Julius C.="got good dance moves."**
 
 Wow. This seems too easy to be true. That *flag* seems like it is a base64 encoded string, so I tried decoding it right away. To my somehow enjoyment it didnt work, so I assumed there is a layer on top of it. 
@@ -33,9 +33,9 @@ The question at this point was, it was shifted, but *by how much?*
 
 After a while looking for anything within the site, I noticed that the link given had a time where it started at **9 seconds**. I took that as the sign I needed if this was going to work, and used normal Caesar Cipher to try and shift it back to the original and then decode it with base64.
 
-To my surprise (as I thought I was there), it did not work. 
+To my surprise (as I thought I already had it done), it did not work. 
 
-However after a while reading about Caesar Cipher, I found out there is also ROT13 that is a special case of Caesar Cipher with a specific shift value. So I shifted the string using ROT13, n = 9, and when I decoded it with base64, alas, got the flag:
+However, after a while reading about Caesar Cipher, I found out there is also ROT13 that is a special case of Caesar Cipher with a specific shift value. So I shifted the string using ROT13, n = 9, and when I decoded it with base64, alas, got the flag:
 
 ![](./Decode_Dance.png)
 
